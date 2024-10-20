@@ -27,7 +27,7 @@ const consentCheckbox = document.getElementById("consent-checkbox");
 const submitButton = document.getElementById("submit-btn");
 
 
-noButton.addEventListener("touchstart", function() {
+noButton.addEventListener("mouseover", function() {
     const x = Math.floor(Math.random() * 200) - 100;
     const y = Math.floor(Math.random() * 200) - 100;
 
@@ -92,7 +92,7 @@ finalDecisionYesButton.addEventListener("click", function() {
 });
 
 finalDecisionNoButton.addEventListener("click", function() {
-    alert("Shut up, I know you love me and I love you too! ❤️ "); // Message for indecision
+    alert("Shut upppp, U liar...rude...gussel insaan...I know your No means Yes...So, Yay! It's a Yes ❤️"); // Message for indecision
     finalDecisionModal.style.display = "none"; // Hide final decision modal
 });
 
@@ -103,8 +103,11 @@ loveConfirmYesButton.addEventListener("click", function() {
 });
 
 loveConfirmNoButton.addEventListener("click", function() {
-    alert("Really? Think again!");
+    alert("Really? Think again! Answer not accepted... ");
     loveConfirmModal.style.display = "none"; // Close love confirmation modal
+
+    // Show final decision modal again
+    finalDecisionModal.style.display = "flex"; // Show final decision modal
 });
 
 // Additional event listeners for ready modal
