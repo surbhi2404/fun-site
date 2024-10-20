@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background-image: url('wallpaper1.jpg'); 
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; 
+    height: 100vh; /* Full height for the body */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox to center content vertically */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.proposal-container {
+    width: 400px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+/*
+.question-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+*/
+
+.question-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between the question and buttons */
+    text-align: center; /* Center text */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+#yes-btn, #no-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#yes-btn {
+    background-color: #28a745; /* Green */
+    color: #fff;
+}
+
+#no-btn {
+    background-color: #dc3545; /* Red */
+    color: #fff;
+}
+
+/* Modal Styles */
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Button styles for modals */
+button {
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Custom modal button colors */
+#love-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+#doubt-btn {
+    background-color: #dc3545; /* Red */
+    color: white;
+}
+
+#think-btn {
+    background-color: #007bff; /* Blue */
+    color: white;
+}
+
+#final-yes-btn, #final-confirm-yes-btn, #ready-yes-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+#final-no-btn, #final-confirm-no-btn, #think-again-btn {
+    background-color: #dc3545; /* Red */
+    color: white;
+}
+
+#final-decision-yes-btn, #love-confirm-yes-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+#final-decision-no-btn, #love-confirm-no-btn {
+    background-color: #dc3545; /* Red */
+    color: white;
+}
+
+.consent-container {
+    position: fixed; /* Fixed positioning */
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#consent-checkbox {
+    margin-right: 10px;
+}
+
+#submit-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue */
+    color: white;
+    cursor: not-allowed; /* Not allowed until checked */
+}
+
+#submit-btn.enabled {
+    cursor: pointer; /* Change cursor when enabled */
+}
+
+#yes-marriage-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#no-marriage-btn {
+    background-color: #dc3545; /* Red */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed; /* Not allowed until hovered */
+    margin-left: 10px; /* Space between buttons */
+}
+
+#gif-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    position: fixed; /* Keep it fixed on the screen */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width of the viewport */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: light background for visibility */
+}
+
+#cute-gif {
+    max-width: 100%; /* Responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+}

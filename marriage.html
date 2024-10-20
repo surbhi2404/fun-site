@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Proposal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="proposal-container">
+        <div class="question-box" id="question-box">
+            <h1>So, you are ready to marry me?</h1>
+            <div class="buttons">
+                <button id="yes-marriage-btn">Yes</button>
+                <button id="no-marriage-btn" disabled>No</button> <!-- Initially disabled -->
+            </div>
+        </div>
+    </div>
+
+    <div id="gif-container" style="display: none;"> <!-- Hidden initially -->
+        <img id="cute-gif" src="cute-gif.png" alt="Cute GIF" />
+    </div>
+
+    <script>
+        // Move No button randomly to prevent clicking
+        document.getElementById("no-marriage-btn").addEventListener("mouseover", function() {
+            const x = Math.floor(Math.random() * 200) - 100;
+            const y = Math.floor(Math.random() * 200) - 100;
+
+            this.style.transition = "all 0.3s ease";
+            this.style.transform = `translate(${x}px, ${y}px)`;
+        });
+
+        // Handle Yes button click
+        document.getElementById("yes-marriage-btn").addEventListener("click", function() {
+            alert("Yay! We're getting married! ❤️");
+            // Show the GIF after the alert
+            setTimeout(() => {
+                document.getElementById("question-box").style.display = "none"; // Hide the question
+                document.getElementById("gif-container").style.display = "flex"; // Show the GIF container
+            }, 100); // Small delay to allow alert to close
+        });
+    </script>
+</body>
+</html>

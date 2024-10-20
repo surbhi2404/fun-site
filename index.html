@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You + Me</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="proposal-container">
+        <div class="question-box">
+            <h1>Do you love me?</h1>
+            <div class="buttons">
+                <button id="yes-btn">Yes</button>
+                <button id="no-btn">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Modal for Main Question -->
+    <div id="modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <p>Why are you not sure about me? Do you not love me now?</p>
+            <button id="love-btn">I love you baby</button>
+            <button id="doubt-btn">No</button>
+        </div>
+    </div>
+
+    <!-- Custom Modal for Doubts -->
+    <div id="doubt-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <p>Really, you still have doubts????</p>
+            <button id="think-btn">OK</button>
+        </div>
+    </div>
+
+    <!-- Custom Modal for Final Confirmation -->
+    <div id="final-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <p>Are you sure you love me?</p>
+            <button id="final-yes-btn">Yes</button>
+            <button id="final-no-btn">No</button>
+        </div>
+    </div>
+
+    <!-- Custom Modal for Final Response -->
+    <div id="final-response-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <p>You love me, right?</p>
+            <button id="final-confirm-yes-btn">Yes</button>
+            <button id="final-confirm-no-btn">No</button>
+        </div>
+    </div>
+
+    <!-- Custom Modal for Not Loving -->
+    <div id="not-love-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <p>You don't love me. Think again and then answer.</p>
+            <button id="think-again-btn">OK</button>
+        </div>
+    </div>
+
+    <!-- Custom Modal for Final Decision -->
+    <div id="final-decision-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <p>Have you decided now?</p>
+            <button id="final-decision-yes-btn">Yes</button>
+            <button id="final-decision-no-btn">No</button>
+        </div>
+    </div>
+
+    <!-- Custom Modal for Ready to Answer -->
+    <div id="ready-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <p>Ready to answer?</p>
+            <button id="ready-yes-btn">Yes</button>
+        </div>
+    </div>
+
+    <!-- Custom Modal for Love Confirmation -->
+    <div id="love-confirm-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <p>You are in love with me...</p>
+            <button id="love-confirm-yes-btn">Yes</button>
+            <button id="love-confirm-no-btn">No</button>
+        </div>
+    </div>
+
+    <div class="consent-container">
+        <input type="checkbox" id="consent-checkbox">
+        <label for="consent-checkbox">I, Rohit Yadav, hereby confirm that I have answered the above question with full consent and have made my final decision.</label>
+        <button id="submit-btn" disabled>Submit</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
